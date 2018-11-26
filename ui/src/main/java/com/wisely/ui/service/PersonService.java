@@ -14,8 +14,8 @@ public interface PersonService {
 	 @ResponseBody List<Person> save( Person name);*/
 
 	@RequestMapping(method = RequestMethod.POST, value = "/save")
-	 List<Person> save(@RequestBody Person name);
+	@ResponseBody	 List<Person> save(@RequestBody Person name);
 
 	@RequestMapping(method = RequestMethod.POST, value = "/insert")
-	List<Person> insert(@RequestParam("name") String name);
+	@ResponseBody	List<Person> insert(@RequestParam("name") String name);
 }
