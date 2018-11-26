@@ -10,6 +10,10 @@
     <modules>
         <module>../config</module>
         <module>../discovery</module>
+        <module>../monitor</module>
+        <module>../person</module>
+        <module>../some</module>
+        <module>../ui</module>
     </modules>
 
     <parent>
@@ -37,6 +41,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
         </dependency>
     </dependencies>
 

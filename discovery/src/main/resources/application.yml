@@ -1,7 +1,14 @@
+##设置应用端口号
 server:
-  port: 8761
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    register-with-eureka: false #当前服务不需要到注册中心注册，因为他就是注册服务
+  port: 8023
+spring:
+  ##设置应用名称
+  application:
+    name: discovery
+  ##设置执行应用那个配置文件
+  profiles:
+    active: dev
+#security:
+#  user:
+#    name: admin
+#    password: 123456

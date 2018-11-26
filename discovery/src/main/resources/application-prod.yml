@@ -1,0 +1,15 @@
+eureka:
+  instance:
+    ##设置应用主机
+    hostname: 132.232.73.46
+  client:
+    ##该值默认为true。若设置为fasle将不会启动注册操作
+    register-with-eureka: false
+    ##是否需要去检索寻找服务，默认是true
+    fetch-registry: false
+    service-url:
+#      defaultZone : http://${security.user.name}:${security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone : http://132.232.73.46:8023/eureka/
+  server:
+    ##默认为true将eureka上的服务实例保护起来,设置false可以将服务上不可用的实例删除
+    enable-self-preservation: false
